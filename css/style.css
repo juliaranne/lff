@@ -1,0 +1,187 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+/** {
+  -moz-box-sizing: border-box; /* Firexfox */
+/*  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+/*  box-sizing: border-box; /* IE */
+body *{
+  border:1px solid red;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: sans-serif;
+  
+}
+
+h1{
+  display:block;
+  font-size: 72px;
+  color:#fff;
+  letter-spacing: 0.1em;
+  text-align: center;
+  float:right;
+  width:95%;
+
+
+  
+
+}
+header{
+  background: url(../images/black-mass-01.jpg) no-repeat center top;
+  background-size: cover;
+  height:100%;
+  padding:0;
+  margin:0;
+
+}
+header *{
+  /*border:1px solid red;*/
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.title_page{
+  width:85%;
+  margin:0 auto;
+  padding-top:295px;
+
+}
+
+.listings_container{
+  width:95%;
+  margin:100px auto;
+}
+
+.film_listings{
+  margin-left:20%;
+}
+
+
+.film{
+  display: block;
+  
+  width:30%;
+  min-width: 150px;
+  height:200px;
+  overflow:hidden;
+  float:left;
+  margin: 0 25px 25px 0;
+  position: relative;
+
+}
+
+
+.film_text{
+  position: absolute;
+  bottom:10;
+  left:10;
+  z-index: 20;
+
+}
+
+
+.film_listings img{
+  height:100%;
+  z-index: -1;  
+  
+}
+svg{
+  position: absolute;
+  bottom:0;
+  z-index: 10;
+  fill: #48D1CC;
+  width:101%;
+  
+  
+}
+
+
+.selectors{
+  float:left;
+  height:100%;
+  min-width: 150px;
+  
+}
+select{
+  width:80%;
+  display: block;
+}
+
+
+nav{
+  width:5%;
+  margin-top:8px;
+
+}
+
+li{
+  display: block;
+  padding-bottom: 20px;
+}
+
+.cinemas{
+ width:39%;
+margin:0 auto; 
+}
+
+.locations{
+float:left;
+margin-top:100px;
+
+}
+.cinema{
+  float:left;
+}
+.cinema img{
+  width:100%;
+
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
