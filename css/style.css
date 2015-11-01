@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
+Project Name: LFF
 Client: Your Client
-Author: Your Name
+Author: Julia Robinson
 Developer @GA in NYC
 */
 
@@ -11,12 +11,14 @@ Developer @GA in NYC
 /*******************************************/
 
 /* Box Model Hack */
-/** {
+* {
   -moz-box-sizing: border-box; /* Firexfox */
-/*  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-/*  box-sizing: border-box; /* IE */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
 body *{
-  border:1px solid red;
+  
 }
 
 
@@ -48,6 +50,7 @@ html {
 
 body {
   font-family: sans-serif;
+  color:#ffffff;
   
 }
 
@@ -60,21 +63,51 @@ h1{
   float:right;
   width:95%;
 
+}
 
-  
+select{
+    display: block;
+    position: relative;
+    width: 180px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #F2F2F2;
+    color: #6C6C6C;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    cursor: pointer;
+    height: 26px;
+    overflow: hidden;
+    background: url(../images/triangle.png) no-repeat 95% 50% #ddd;
+    
+}
+
+
+nav{
+  width:5%;
+  margin-top:8px;
+  padding-left:40px;
+}
+
+ul{
+  list-style-type: circle;
+}
+
+li{
+
+  display: list-item;
+  padding-bottom: 20px;
 
 }
-header{
-  background: url(../images/black-mass-01.jpg) no-repeat center top;
-  background-size: cover;
-  height:100%;
-  padding:0;
-  margin:0;
 
-}
-header *{
-  /*border:1px solid red;*/
-}
+
 
 
 
@@ -85,7 +118,16 @@ header *{
 .title_page{
   width:85%;
   margin:0 auto;
-  padding-top:295px;
+  /*padding-top:295px;*/
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+  transform: translate(0,-50%);  
 
 }
 
@@ -102,7 +144,6 @@ header *{
 
 .film{
   display: block;
-  
   width:30%;
   min-width: 150px;
   height:200px;
@@ -120,6 +161,7 @@ header *{
   left:10;
   z-index: 20;
 
+
 }
 
 
@@ -128,14 +170,15 @@ header *{
   z-index: -1;  
   
 }
-svg{
+
+.poly{
   position: absolute;
   bottom:0;
+  left:-1;
   z-index: 10;
-  fill: #48D1CC;
+  fill:#F2F2F2;/*7FFFD4*/
   width:101%;
-  
-  
+  opacity: 0.8;
 }
 
 
@@ -143,44 +186,49 @@ svg{
   float:left;
   height:100%;
   min-width: 150px;
+  margin-right:20px;
   
-}
-select{
-  width:80%;
-  display: block;
-}
-
-
-nav{
-  width:5%;
-  margin-top:8px;
-
-}
-
-li{
-  display: block;
-  padding-bottom: 20px;
 }
 
 .cinemas{
-   width:37%;
+  width:752px;
   margin:0 auto;
-  min-width: 550px; 
+  
+}
+.locations *{
+  border:1px solid red;
 }
 
 .locations{
   width:100%;
-float:left;
-margin-top:100px;
+  float:left;
+  margin-top:50px;
 
 }
 .cinema{
   float:left;
+  width:375px;
+  height:250px;
+  
 }
 .cinema img{
-  width:100%;
-
+  z-index: 5;
+  float:right;
 }
+.locationtext{
+  color:black;
+  position: relative;
+  z-index: 20;
+}
+circle{
+  position: absolute;
+  bottom:0;
+  left:-1;
+  z-index: 10;
+  fill:#7FFFD4;
+ 
+  opacity: 0.8;
+  }
 
 
 
@@ -188,3 +236,16 @@ margin-top:100px;
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+header{
+  background: url(../images/black-mass-01.jpg) no-repeat center top;
+  background-size: cover;
+  height:100%;
+  padding:0;
+  margin:0;
+
+}
+
+
+
+
