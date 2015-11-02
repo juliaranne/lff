@@ -18,7 +18,7 @@ Developer @GA in NYC
 }
 
 body *{
-  
+  border: 1px solid red;
 }
 
 
@@ -51,14 +51,15 @@ html {
 body {
   font-family: sans-serif;
   color:#ffffff;
-  
+  font-size: 0.85rem;
+  line-height: 1.1rem;
 }
 
 h1{
   display:block;
   font-size: 72px;
   color:#fff;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1rem;
   text-align: center;
   float:right;
   width:95%;
@@ -91,20 +92,29 @@ select{
 
 
 nav{
-  width:5%;
-  margin-top:8px;
-  padding-left:40px;
+  
+  padding-left:80px;
+  position:fixed;
+  z-index:50;
+  top:42%;
+  text-align:center;
 }
 
 ul{
-  list-style-type: circle;
+  list-style-image: url(../images/twotickets-50.png); 
+  
 }
 
 li{
+ 
 
-  display: list-item;
-  padding-bottom: 20px;
+}
+a{
 
+}
+img{
+
+  max-width: 100%
 }
 
 
@@ -116,7 +126,7 @@ li{
 /* LAYOUT
 /*******************************************/
 .title_page{
-  width:85%;
+  
   margin:0 auto;
   /*padding-top:295px;*/
   position:absolute;
@@ -139,6 +149,7 @@ li{
 .film_listings{
   margin-left:20%;
   max-width: 1100px;
+  min-width: 800px;
 }
 
 
@@ -146,8 +157,6 @@ li{
   display: block;
   width:30%;
   min-width: 150px;
-  height:200px;
-  overflow:hidden;
   float:left;
   margin: 0 25px 25px 0;
   position: relative;
@@ -160,21 +169,19 @@ li{
   bottom:10;
   left:10;
   z-index: 20;
-
-
 }
 
 
 .film_listings img{
-  height:100%;
+  width:100%;
   z-index: -1;  
   
 }
 
 .poly{
   position: absolute;
-  bottom:0;
-  left:-1;
+  bottom:-1;
+  left:0;
   z-index: 10;
   fill:#F2F2F2;/*7FFFD4*/
   width:101%;
@@ -191,12 +198,14 @@ li{
 }
 
 .cinemas{
-  width:752px;
   margin:0 auto;
+  width:650px; 
   
 }
+
+
 .locations *{
-  border:1px solid red;
+  
 }
 
 .locations{
@@ -207,17 +216,29 @@ li{
 }
 .cinema{
   float:left;
-  width:375px;
-  height:250px;
-  
+   
 }
-.cinema img{
-  z-index: 5;
-  float:right;
+.cinema:nth-child(even) {
+  margin-left: 20px;
+}
+
+.main{
+  position:relative;
+  z-index:5;
+  margin-left:-100px;
+}
+
+.overlay{
+  position:relative;
+  z-index: 10;
+  
+
 }
 .locationtext{
-  color:black;
+  color:#00B38F;
   position: relative;
+  top:-125;
+  left:15;
   z-index: 20;
 }
 circle{
@@ -245,6 +266,115 @@ header{
   margin:0;
 
 }
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 500px){
+ 
+html *{
+
+
+}
+.title_page{
+   margin:0 auto;
+  /*padding-top:295px;*/
+  position:static;
+  
+  text-align:center;
+  
+  height:auto;
+  
+
+  
+
+  }
+
+
+  header{
+    
+    width:100%;
+    background-size: contain;
+    
+  }
+nav{
+    display:none;
+  }
+
+
+.selectors{
+    width:100%;
+    float:none;
+    height:auto;
+    margin-right:0;
+  }
+select{
+    width: 100%;
+    height: 36px;
+    margin:10px auto;
+}
+
+.listings_container{
+  width:95%;
+  margin:0 auto;
+}
+
+.film_listings{
+  width: 100%;
+  margin:0;
+  
+  
+}
+.film{
+    float:none;
+    width:100%;
+
+    
+  }
+.film_listings img{
+  position: relative;
+   
+    
+    
+  }
+.locations{
+  
+  float:none;
+  margin-top:0;
+
+}
+.cinemas{
+ width:95%;
+}
+.cinema{
+  float:none;
+  margin:0 auto;
+}
+
+.locationtext{
+  width:250px;
+}
+
+.cinema:nth-child(even) {
+  margin-left: 0;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
