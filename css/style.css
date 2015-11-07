@@ -24,6 +24,7 @@ body *{
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -51,20 +52,27 @@ html {
 body {
   font-family: sans-serif;
   color:#ffffff;
-  font-size: 0.85rem;
-  font-weight: lighter;
-  line-height: 1.3rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
 }
 
 h1{
   display:block;
   font-size: 72px;
   color:#fff;
-  letter-spacing: 0.1rem;
+  letter-spacing: 1rem;
   text-align: center;
   float:right;
   width:95%;
 
+}
+
+h2{
+  position: absolute;
+  bottom:10;
+  left:10;
+  z-index: 20;
+  font-weight: bold;
 }
 
 select{
@@ -127,12 +135,7 @@ a:active { color: #000;}
 img{
   max-width: 100%
 }
-h2{
-  position: absolute;
-  bottom:10;
-  left:10;
-  z-index: 20;
-}
+
 
 
 
@@ -313,9 +316,13 @@ html *{
 
 
   header{
-  width:100%;
+    background-size: cover;
+    height:100%;
+    padding:0;
+    margin:0;
+  /*width:100%;
   max-height:467px;
-  background-size: contain;
+  background-size: contain;*/
     
   }
 
