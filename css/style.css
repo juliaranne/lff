@@ -52,7 +52,7 @@ body {
   font-family: sans-serif;
   color:#ffffff;
   font-size: 0.85rem;
-  line-height: 1.1rem;
+  line-height: 1.3rem;
 }
 
 h1{
@@ -106,10 +106,12 @@ nav{
   cursor: pointer; 
   cursor: hand;
   width:50px;
-}
- .moveto{
   overflow: hidden;
- }
+
+}
+.navlink:hover{
+  overflow:visible;
+}
 
 
 a{
@@ -123,6 +125,12 @@ a:active { color: #000;}
 
 img{
   max-width: 100%
+}
+h2{
+  position: absolute;
+  bottom:10;
+  left:10;
+  z-index: 20;
 }
 
 
@@ -169,14 +177,6 @@ img{
   margin: 0 25px 25px 0;
   position: relative;
   overflow: hidden;
-}
-
-
-.film_text{
-  position: absolute;
-  bottom:10;
-  left:10;
-  z-index: 20;
 }
 
 
@@ -277,15 +277,20 @@ def{
 
   }
 
-  .filmoverlay:hover{
+.filmoverlay:hover{
     bottom:0;
     
   }
-  .cinemaoverlay{
+.cinemaoverlay{
   position:relative;
   z-index: 10;
   
 }
+.filmtext{
+  height:0;
+}
+
+
 
 
 /******************************************
@@ -352,6 +357,20 @@ select{
 .film_listings img{
   max-width:100%;  
   }
+
+.filmtext{
+  height:auto;
+  background-color:#00E3E3;
+}
+
+.filmtext p{
+  color:#ffffff;
+  z-index: 60;
+  margin:0 0 20px 0;
+  padding:0 20px 10px 10px;
+  
+
+}
 .locations{
   float:none;
   margin-top:0;
