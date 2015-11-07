@@ -1,6 +1,22 @@
 $( document ).ready(function() {
 
 
+var hidep = $('.filmtext p')
+	hidep.slideUp();
+
+
+// function slideup(e){
+// 	e.preventDefault();
+
+// 	alert('now');
+
+// }
+
+// $('.filmtext').on('click', 'slideup');
+/*********************
+ Scroll page to href nav
+***********************/
+
 	 function scrollto(e){
 	 	e.preventDefault();
 
@@ -14,9 +30,13 @@ $( document ).ready(function() {
 	     }, 900, 'swing');
 	 }
 	
-
 	 $('.navlink').on('click', scrollto);
+
+
 	
+/*********************
+ filter films when Genre is selected 
+***********************/
 
 	$('select.genre').on('change',function(event){
 		event.preventDefault();
@@ -31,8 +51,12 @@ $( document ).ready(function() {
 			} 
 		});
 	});
-		
 
+
+		
+/*********************
+ filter films when Date is selected 
+***********************/
 $('select.dates').on('change', function(event){
 	event.preventDefault();
 	var dates = ($(this).val().toLowerCase()).replace(/\s+/g, '');
@@ -46,6 +70,31 @@ $('select.dates').on('change', function(event){
 		}
 	});
 });
+
+
+
+
+ // //
+ // function imageswap(){
+
+ // $('.film').each(function(){
+
+	// // var films = ($('.film').each());
+	// var arr = [$(this).find('img').attr('src')];
+	// // console.log(arr);
+
+
+	// var items = arr[Math.floor(Math.random()* arr.length)];
+	// return (items);
+
+	//  $('header').css('background-image', 'url(../images/' + items + ')'); 
+
+ // });
+
+ // };
+
+ // imageswap();
+
 
 
 });

@@ -73,6 +73,7 @@ h2{
   left:10;
   z-index: 20;
   font-weight: bold;
+  color:#ffffff;
 }
 
 select{
@@ -369,6 +370,7 @@ select{
 .filmtext{
   height:auto;
   background-color:#00E3E3;
+  z-index: -10;
 }
 
 .filmtext p{
