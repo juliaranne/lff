@@ -18,14 +18,15 @@
 		</div>
 		<nav>
 			<ul>
-			<li><a href="#todo">listings</a></li>
-			<li><a href="#todo">locations</a></li>
+			<li class="navlink "><a href="#listings">listings</a></li>
+			<li class="navlink "><a href="#locations">locations</a></li>
 			</ul>
 		</nav>
 		
 	</header>
 
 <div class="listings_container">
+<div id="listings"></div>
 
 	<section class="selectors">
 
@@ -65,96 +66,143 @@
 	
 	<section class="film_listings clearfix">
 		<article class="film">
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1"svg class="poly" viewBox="0 0 800 800">
-		<polyline points="0,500 800,670 800,800 0,800"  />
-		</svg>
-		<img src="images/couple-in-a-hole-02.jpg" />
+			<def>
+			<svg class="filmoverlay" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 415 150" style="enable-background:new 0 0 415 150;" >
+			<polygon id="original-poly" class="st0" points="415,72.5 0,0 0,150 415,150 "/>
+			</svg>
+			</def>
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			
+			<img src="images/couple-in-a-hole-02.jpg" />
 
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Couple in a Hole</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1"svg class="poly blue" viewBox="0 0 800 800">
-		<polyline points="0,500 800,670 800,800 0,800"  />
-		</svg>
-		<img src="images/departure-03.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/departure-03.jpg" />
+				<div class="film_text">
+				<h2>Departure</h2>
+				<!-- <p>Film Description</p> -->
+				</div>
+		</article>
+
+		<article class="film" data-genre="horror">
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/black-mass-01.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Black Mass</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/black-mass-01.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/bigger-splash-02.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>A Bigger Splash</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/bigger-splash-02.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/ayanda-05.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Ayanda</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
-		<article class="film">
-		<img src="images/ayanda-05.jpg" />
+
+		<article class="film" data-genre="horror">
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/an-03.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>An</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/an-03.jpg" />
-			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
-			</div>
-		</article>
-		<article class="film">
-		<img src="images/der-nachtmar-02.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/der-nachtmar-02.jpg" />
 		
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Der Nachtmar</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/invention-03.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/invention-03.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Invention</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/shooting-stars-01.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/shooting-stars-01.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Shooting Stars</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
-		<article class="film">
-		<img src="images/suffragette-002.jpg" />
+
+		<article class="film" data-genre="romance">
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/suffragette-002.jpg" />
 		
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Suffragette</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/valley-of-love-04.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/valley-of-love-04.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Valley of Love</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
+
 		<article class="film">
-		<img src="images/burn-burn-burn-01.jpg" />
+			<svg class="filmoverlay">
+			<use xlink:href="#original-poly" x="0" y="50px" />
+			</svg>
+			<img src="images/burn-burn-burn-01.jpg" />
 			<div class="film_text">
-			<h2>Title</h2>
-			<p>Film Description</p>
+			<h2>Burn Burn Burn</h2>
+			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
 
@@ -162,11 +210,12 @@
 </div>
 
 <div class="locations">
+<div id="locations"></div>
 	<section class="cinemas clearfix">
 
 		<article class="cinema">
 			
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/empire.gif" class="main" />
 			
 			<p class="locationtext">
@@ -177,7 +226,7 @@
 		</article>
 		<article class="cinema">
 			
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/peckham.gif" class="main" />
 			
 			<p class="locationtext">
@@ -187,7 +236,7 @@
 			</p>
 		</article>
 		<article class="cinema">
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/pricecharles.gif" class="main" />
 			
 			
@@ -198,7 +247,7 @@
 			</p>
 		</article>
 		<article class="cinema">
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/screenongreen.gif" class="main" />
 			
 			
@@ -209,7 +258,7 @@
 			</p>
 		</article>
 		<article class="cinema">
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/bfi.gif" class="main"/>
 			
 			
@@ -220,7 +269,7 @@
 			</p>
 		</article>
 			<article class="cinema">
-			<img src="images/circle.png" class="overlay" />
+			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/curzonsoho.gif" class="main" />
 			
 			
@@ -235,7 +284,7 @@
 </div>
 
 
-
-
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
