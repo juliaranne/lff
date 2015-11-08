@@ -1,18 +1,32 @@
 $( document ).ready(function() {
 
 
-var hidep = $('.filmtext p')
-	hidep.slideUp();
+var hide_text = $('.filmtext p')
+	hide_text.slideToggle();
 
 
-// function slideup(e){
-// 	e.preventDefault();
+function filmdetails(event){
+	event.preventDefault();
 
-// 	alert('now');
+	var linkto = $(this).find('a').attr('href');
 
-// }
+	var windowwidth = $(window).width();
+	
 
-// $('.filmtext').on('click', 'slideup');
+	if ( windowwidth > 500 ){
+		window.location.href = linkto;
+	} else {
+		hide_text.slideToggle();
+	}
+}
+$('.film').on('click', filmdetails );
+
+
+//hide filmtext
+//film class on click prevent default
+//if screen width is greater than 500px follow link
+//else filmtext slidedown.
+
 /*********************
  Scroll page to href nav
 ***********************/
