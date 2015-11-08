@@ -110,7 +110,8 @@ nav{
 }
 
 .navlink{
-  background: url(../images/twotickets-50.png)no-repeat top left;
+  background: url(../images/filmreel.png)no-repeat top left;
+  opacity: 0.3;
   display: block;
   padding: 18px 0 25px 55px;
   cursor: pointer; 
@@ -120,21 +121,29 @@ nav{
 
 }
 .navlink:hover{
+  opacity: 0.9;
   overflow:visible;
 }
-
 
 a{
   text-decoration: none;
 }
 
-a:link { color: #000;}
-a:visited { color: #000;}
-a:hover { color: #000;}
-a:active { color: #000;}
+a:link { color: #898989;}
+a:visited { color: #898989;}
+a:hover { color: #898989;}
+a:active { color: #898989;}
 
 img{
   max-width: 100%
+}
+
+.filmtitle_indv{
+  color:000000;
+  font-size: 1.9rem;
+  display:block;
+  position: static;
+  margin-bottom: 20px;
 }
 
 
@@ -191,17 +200,6 @@ img{
   
 }
 
-.poly{
-  position: absolute;
-  bottom:-1;
-  left:0;
-  z-index: 10;
-  fill:#F2F2F2;/*7FFFD4*/
-  width:101%;
-  opacity: 0.8;
-}
-
-
 .selectors{
   float:left;
   height:100%;
@@ -229,6 +227,7 @@ img{
 }
 .cinema{
   float:left;
+  height:250px;
    
 }
 .cinema:nth-child(even) {
@@ -243,11 +242,14 @@ img{
 
 
 .locationtext{
-  color:#00B38F;
+  color:#ffffff;
   position: relative;
-  top:-125;
-  left:15;
+  top:-138;
+  left:25;
   z-index: 20;
+}
+.filmdetails{
+  margin: 40px 40px 0 40px;
 }
 
 
@@ -282,6 +284,7 @@ def{
 
   }
 
+
 .filmoverlay:hover{
     bottom:0;
     
@@ -289,11 +292,31 @@ def{
 .cinemaoverlay{
   position:relative;
   z-index: 10;
-  
+  width:200px;
+  height:200px;
+  fill:#00FFCC;
+  transition: all 0.2s ease;
 }
+.cinemaoverlay:hover{
+  fill:#99FFEB;
+}
+
+
 .filmtext{
   height:0;
 }
+
+.indv{
+  max-width:830px;
+  color:#000000;
+  margin-top:20px;
+}
+.filmtimes li{
+  display: inline-block;
+}
+
+
+
 
 
 
@@ -371,16 +394,24 @@ select{
   height:auto;
   background-color:#00E3E3;
   z-index: -10;
+  margin-bottom: 20px;
 }
 
 .filmtext p{
   color:#ffffff;
   z-index: 60;
-  margin:0 0 20px 0;
   padding:0 20px 10px 10px;
-  
-
 }
+
+.filmlocation{
+  font-weight: bold;
+}
+
+.filmtimes{
+  margin: 0 0 10px 10px;
+}
+
+
 .locations{
   float:none;
   margin-top:0;

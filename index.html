@@ -32,13 +32,12 @@
 
 	
 		<select class="dates">
-			<option>Select a date</option>
+			<option value="Select a date">Select a date</option>
 		    <option value="12 October">12 October</option>
 		    <option value="13 October">13 October</option>
 		    <option value="14 October">14 October</option>
 		    <option value="15 October">15 October</option>
 		    <option value="16 October">16 October</option>
-		    <option value="17 October">17 October</option>
 	  	</select>
 
 
@@ -47,14 +46,13 @@
 		    <option value="Horror">Horror</option>
 		    <option value="Romance">Romance</option>
 		    <option value="Action">Action</option>
-		    <option value="Sci-fi">Sci-fi</option>
-		    <option value="Independent">Indie</option>
+		    <option value="Indie">Indie</option>
 		    <option value="Thriller">Thriller</option>
 	  	</select>
 
 	  	<select class="location">
-	  		<option>Select cinema</option>
-		    <option value="Baker Street">Screen on the Green</option>
+	  		<option value="Select cinema">Select cinema</option>
+		    <option value="Screen on the Green">Screen on the Green</option>
 		    <option value="BFI">BFI</option>
 		    <option value="Peckham Plex">Peckham Plex</option>
 		    <option value="Leicester Square">Empire</option>
@@ -63,28 +61,31 @@
 	  	</select>	
 
   	</section>
+
+  	<def>
+		<svg class="filmoverlay" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 415 150" style="enable-background:new 0 0 415 150;" >
+			<polygon id="original-poly" class="st0" points="415,72.5 0,0 0,150 415,150 "/>
+		</svg>
+	</def>
+	<def>
+		<svg class="cinemaoverlay" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" >
+				<circle id ="original-circle" cx="100" cy="100" r="100" />
+			</svg>
+	</def>
 	
 	<section class="film_listings clearfix">
-		<article class="film">
-			<def>
-				<svg class="filmoverlay" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 415 150" style="enable-background:new 0 0 415 150;" >
-					<polygon id="original-poly" class="st0" points="415,72.5 0,0 0,150 415,150 "/>
-				</svg>
-			</def>
-
+		<article class="film" data-genre="action" data-dates="13october" data-location="peckhamplex">
 			<svg class="filmoverlay">
 				<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
-			
 			<img src="images/couple-in-a-hole-02.jpg" />
-
 			<div class="film_text">
 			<h2>Couple in a Hole</h2>
 			<!-- <p>Film Description</p> -->
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="indie" data-dates="12october" data-location="bfi">
 				<svg class="filmoverlay">
 					<use xlink:href="#original-poly" x="0" y="50px" />
 				</svg>
@@ -96,7 +97,7 @@
 		</article>
 
 		<div class="filmtext">
-			<article class="film" data-genre="horror">
+			<article class="film" data-genre="horror" data-dates="14october" data-location="curzon">
 				<a href = "blackmass.html">
 					<svg class="filmoverlay">
 						<use xlink:href="#original-poly" x="0" y="50px" />
@@ -105,23 +106,40 @@
 					<h2>Black Mass</h2>
 				</a>
 			</article>
-			
-			<p>With its gritty and absorbing depiction of vice and corruption in Boston, Scott Cooper’s (Crazy Heart) chilling crime drama joins the esteemed ranks of The Departed and legendary TV series The Wire. Adapted from Dick Lehr and Gerard O’Neill’s acclaimed book, it charts the rise of one of America’s most notorious mobsters. FBI Agent John Connolly (Joel Edgerton) persuades his superiors to let him approach Irish gangster Jimmy ‘Whitey’ Bulger (Johnny Depp) to become an informant for the FBI. Connolly reaches Jimmy via his brother, Billy Bulger (Benedict Cumberbatch), a political rising star on the fast track to becoming State Senator. The goal is to eliminate their common enemy – the Italian mob. However Connolly, who draws on a misguided sense of South Boston loyalty, holds none of the power. Initially oblivious to the fact that the alliance he builds is protecting Whitey and allowing him to consolidate his powerbase, Connolly soon realises that if he exposes him, he will cast suspicion on his own actions. Cooper, who has already proved himself a superb director of actors, extracts gripping performances from the stellar ensemble cast, with Depp almost unrecognisable as the brutal, ruthless gangster and Edgerton unnerving as the FBI agent who gets in too deep.</p>
-					
+			<article class="description">
+				<p>With its gritty and absorbing depiction of vice and corruption in Boston, Scott Cooper’s (Crazy Heart) chilling crime drama joins the esteemed ranks of The Departed and legendary TV series The Wire. Adapted from Dick Lehr and Gerard O’Neill’s acclaimed book, it charts the rise of one of America’s most notorious mobsters. FBI Agent John Connolly (Joel Edgerton) persuades his superiors to let him approach Irish gangster Jimmy ‘Whitey’ Bulger (Johnny Depp) to become an informant for the FBI. Connolly reaches Jimmy via his brother, Billy Bulger (Benedict Cumberbatch), a political rising star on the fast track to becoming State Senator. The goal is to eliminate their common enemy – the Italian mob. </p>
+				<p class="filmlocation">Showing at: Curzon</p>
+				<ul class="filmtimes">
+					<li>19:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>		
 		</div>
 
-		<article class="film">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/bigger-splash-02.jpg" />
-			<div class="film_text">
-			<h2>A Bigger Splash</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="filmtext">
+			<article class="film" data-genre="romance" data-dates="15october" data-location="screenonthegreen">
+				<a href = "blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/bigger-splash-02.jpg" />
+					<div class="film_text">
+					<h2>A Bigger Splash</h2>
+				</a>
+			</article>
+			<article class="description">
+				<p>Marianne (Tilda Swinton) is a glittering rock star on a hiatus with her filmmaker lover Paul (Matthias Schoenaerts). Recovering from an operation on her throat, she has retreated from both the public gaze and her performance persona (an androgynous cross between Mick Jagger and David Bowie). Poolside, stripped naked in the scorching Italian sun and seemingly at ease, the lovers are completely unprepared for the sudden arrival of cocky music producer Harry (Ralph Fiennes) and his recently discovered daughter, the petulant and sexy Penelope (Dakota Johnson). Some clothes get ripped off, while others get put back on in this deliciously overheated drama with a dangerous edge. A remake of Jacques Deray and Jean-Claude Carrière’s La Piscine (1969) which draws its title from David Hockney’s painting of the same era, A Bigger Splash transposes the original story from the French Riviera to Pantelleria, a volcanic, windswept Sicilian island that heaves with the same violence as the character’s emotions.</p>
+				<p class="filmlocation">Showing at: Screen on the Green</p>
+				<ul class="filmtimes">
+					<li>16:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>	
 
-		<article class="film" data-dates="12october">
+
+		</div>
+
+		<article class="film" data-genre="thriller" data-dates="16october" data-location="empire">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -132,7 +150,7 @@
 			</div>
 		</article>
 
-		<article class="film" data-genre="horror">
+		<article class="film" data-genre="indie" data-dates="12october" data-location="princecharles">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -143,7 +161,7 @@
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="thriller" data-dates="13october" data-location="curzon">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -155,7 +173,7 @@
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="horror" data-dates="14october" data-location="screenonthegreen">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -166,7 +184,7 @@
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="romance" data-dates="15october" data-location="bfi">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -177,7 +195,7 @@
 			</div>
 		</article>
 
-		<article class="film" data-genre="romance">
+		<article class="film" data-genre="indie" data-dates="13october" data-location="bfi">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -189,7 +207,7 @@
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="romance" data-dates="16october" data-location="curzon">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -200,7 +218,7 @@
 			</div>
 		</article>
 
-		<article class="film">
+		<article class="film" data-genre="action" data-dates="14october" data-location="empire">
 			<svg class="filmoverlay">
 			<use xlink:href="#original-poly" x="0" y="50px" />
 			</svg>
@@ -214,71 +232,89 @@
 	</section>
 </div>
 
-<div class="locations">
 <div id="locations"></div>
+<div class="locations">
+
 	<section class="cinemas clearfix">
 
-		<article class="cinema">
+		<article class="cinema" data-location="empire">
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			
-			<img src="images/circle.png" class="cinemaoverlay" />
 			<img src="images/empire.gif" class="main" />
 			
 			<p class="locationtext">
+			Empire<br />
 			5-6 Leicester Square<br />
 			London<br />
 			WC2H 7NA
 			</p>
 		</article>
-		<article class="cinema">
+		<article class="cinema" data-location="peckhamplex">
 			
-			<img src="images/circle.png" class="cinemaoverlay" />
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			<img src="images/peckham.gif" class="main" />
 			
 			<p class="locationtext">
+			Peckham Plex<br />
 			95A Rye Lane<br />
 			London<br />
 			SE15 4ST
 			</p>
 		</article>
-		<article class="cinema">
-			<img src="images/circle.png" class="cinemaoverlay" />
+		<article class="cinema" data-location="princecharles">
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			<img src="images/pricecharles.gif" class="main" />
 			
-			
 			<p class="locationtext">
+			Prince Charles Cinema<br />
 			7 Leicester Pl<br />
 			London<br />
 			WC2H 7BY
 			</p>
 		</article>
-		<article class="cinema">
-			<img src="images/circle.png" class="cinemaoverlay" />
+		<article class="cinema" data-location="screenonthegreen">
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			<img src="images/screenongreen.gif" class="main" />
 			
 			
 			<p class="locationtext">
+			Screen on the Green<br />
 			83 Upper Street<br />
 			London<br />
 			N1 0NP
 			</p>
 		</article>
-		<article class="cinema">
-			<img src="images/circle.png" class="cinemaoverlay" />
+		<article class="cinema" data-location="bfi">
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			<img src="images/bfi.gif" class="main"/>
 			
 			
 			<p class="locationtext">
+			BFI<br />
 			South Block, Belvedere Rd<br />
 			London<br />
 			SE1 8XT
 			</p>
 		</article>
-			<article class="cinema">
-			<img src="images/circle.png" class="cinemaoverlay" />
+			<article class="cinema" data-location="curzon">
+			<svg class="cinemaoverlay">
+				<use xlink:href="#original-circle" x="0" y="0px" />
+			</svg>
 			<img src="images/curzonsoho.gif" class="main" />
 			
 			
 			<p class="locationtext">
+			Curzon Soho<br />
 			99 Shaftesbury Avenue<br />
 			London<br />
 			W1D 5DY
