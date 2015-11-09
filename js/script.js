@@ -81,12 +81,14 @@ $('.film').on('click', filmdetails );
 $('select.dates').on('change', function(event){
 	event.preventDefault();
 	var dates = ($(this).val().toLowerCase()).replace(/\s+/g, '');
+	
 
 	$('.film').show();
 
 	$('.film').each(function(){
 
 		if ($(this).data('dates') !== dates) {
+			
 			$(this).hide();
 		 } if ( dates == 'selectadate') {
 		 	$('.film').show();
@@ -101,7 +103,7 @@ $('select.dates').on('change', function(event){
 		$('select.location').on('change',function(event){
 		event.preventDefault();
 		var location = ($(this).val().toLowerCase()).replace(/\s+/g, '');
-
+		
 
 
 		$('.film').show();
@@ -110,6 +112,7 @@ $('select.dates').on('change', function(event){
 		$('.film').each(function(){
 		
 			if ($(this).data('location') !== location) {
+				
 				$(this).hide();
 			} if ( location == 'selectcinema') {
 				$('.film').show();
