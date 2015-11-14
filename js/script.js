@@ -1,3 +1,8 @@
+/* Would still like to have the three select lists relate to each other
+ - looping through those films visible rather than all the films each time. 
+ Would also like the to be able to slide the films up on a second click, rather than
+ having to click a different film */
+
 $( document ).ready(function() {
 
 
@@ -68,7 +73,7 @@ $('.film').on('click', filmdetails );
 			if ($(this).data('genre') === genre) {
 				
 				var matchgenre = $(this).find('.filmoverlay');
-				var desc = $(this).parent('.filmtext');
+				var desc = $(this).parent('.film_wrapper');
 				matchgenre.css('fill', '#FF7474');
 				desc.css('backgroundColor', '#FF7474');
 			} 
