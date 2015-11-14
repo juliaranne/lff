@@ -12,7 +12,6 @@
 
 <body>
 	<header>
-
 		<div class="title_page clearfix">
 			<h1>LFF</h1>
 		</div>
@@ -62,41 +61,66 @@
 
   	</section>
 
+  	<!-- Define polygon svg -->
+
   	<def>
 		<svg class="filmoverlay" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 415 150" style="enable-background:new 0 0 415 150;" >
 			<polygon id="original-poly" class="st0" points="415,72.5 0,0 0,150 415,150 "/>
 		</svg>
 	</def>
+
+	<!-- Define circle svg -->
 	<def>
 		<svg class="cinemaoverlay" version="1.1" id="Layer_2" x="0px" y="0px" viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" >
 				<circle id ="original-circle" cx="100" cy="100" r="100" />
 			</svg>
 	</def>
+
 	
 	<section class="film_listings clearfix">
-		<article class="film" data-genre="action" data-dates="13october" data-location="peckhamplex">
-			<svg class="filmoverlay">
-				<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/couple-in-a-hole-02.jpg" />
-			<div class="film_text">
-			<h2>Couple in a Hole</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
 
+	<div class="film_wrapper"> <!-- Wrapper for each film listing -->
+		<article class="film" data-genre="action" data-dates="13october" data-location="peckhamplex">
+			<a href = "blackmass.html">
+				<svg class="filmoverlay">
+					<use xlink:href="#original-poly" x="0" y="50px" />
+				</svg>
+				<img src="images/couple-in-a-hole-02.jpg" />
+				<h2>Couple in a Hole</h2>
+			</a>
+		</article>
+		<article class="description">
+				<p>John and Karen are a couple who live in a hole. Their underground forest dwelling enables them to eke out an existence with its own rhythms and routines, and to stay off the grid and away from the villagers in the valley below. If only they could be left alone to deal with their mysterious grief. But an overly concerned neighbour will not take no for an answer. Having made his name with a string of dark and occasionally cruel short films, Tom Geens brings a profound oddness to the proceedings, interspersed with splashes of blackest Belgian humour. Kate Dickie gives an extraordinarily physical performance, while the gradual bonding between the two men provides one of the tenderest relationships you’ll see onscreen this year.</p>
+				<p class="filmlocation">Showing at: Peckham Plex</p>
+				<ul class="filmtimes">
+					<li>19:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+	</div> <!-- end of each film -->
+
+	<div class="film_wrapper">
 		<article class="film" data-genre="indie" data-dates="12october" data-location="bfi">
+			<a href="blackmass.html">
 				<svg class="filmoverlay">
 					<use xlink:href="#original-poly" x="0" y="50px" />
 				</svg>
 				<img src="images/departure-03.jpg" />
-				<div class="film_text">
 				<h2>Departure</h2>
-				<!-- <p>Film Description</p> -->
-				</div>
+			</a>	
 		</article>
+		<article class="description">
+				<p>Elliot (Alex Lawther) is a wispy dreamer who, with his mother Beatrice (Juliet Stevenson), is packing up their French country house in preparation to sell it. There is a melancholic air to their efforts, with forced companionableness from Beatrice who insists on dinners with her distant son. Elliot takes breaks to wander into the local village bar, where he writes romantic poetry, wearing a vintage French army coat and eyeing up the rough beauty of local boy Clément, who works on his motorbike. Clément is as natural as Elliot is awkward and they strike up an unlikely friendship. Longing, loneliness, nostalgia for a sense of family that may have never existed permeate this delicate first feature from British debut director Andrew Steggall. It’s a fine, elegantly crafted debut with Alex Lawther (X+Y, The Imitation Game) impressing as a major British star in the making.</p>
+				<p class="filmlocation">Showing at: BFI</p>
+				<ul class="filmtimes">
+					<li>19:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+	</div>
 
-		<div class="filmtext">
+
+		<div class="film_wrapper"> 
 			<article class="film" data-genre="horror" data-dates="14october" data-location="curzon">
 				<a href = "blackmass.html">
 					<svg class="filmoverlay">
@@ -114,16 +138,15 @@
 					<li>20:30</li>	
 				</ul>
 			</article>		
-		</div>
+		</div> 
 
-		<div class="filmtext">
+		<div class="film_wrapper">
 			<article class="film" data-genre="romance" data-dates="15october" data-location="screenonthegreen">
 				<a href = "blackmass.html">
 					<svg class="filmoverlay">
 						<use xlink:href="#original-poly" x="0" y="50px" />
 					</svg>
 					<img src="images/bigger-splash-02.jpg" />
-					<div class="film_text">
 					<h2>A Bigger Splash</h2>
 				</a>
 			</article>
@@ -135,99 +158,170 @@
 					<li>20:30</li>	
 				</ul>
 			</article>	
-
-
 		</div>
 
-		<article class="film" data-genre="thriller" data-dates="16october" data-location="empire">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/ayanda-05.jpg" />
-			<div class="film_text">
-			<h2>Ayanda</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="film_wrapper">
+			<article class="film" data-genre="thriller" data-dates="16october" data-location="empire">
+				<a href = "blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/ayanda-05.jpg" />
+					<h2>Ayanda</h2>
+				</a>	
+			</article>
+			<article class="description">
+				<p>Ayanda is a young woman living in Yeoville, a lively township of Johannesburg which is a unique melting pot of residents from across Africa. She’s a designer, working out of the garage she inherited from her father, putting all her energies and creativity into keeping it running in memory of him. A film full of joy, with much to say about what the possibilities of young women’s lives can be, Fulu Mugovahni as the dynamic Ayanda and OC Ukeje as loyal mechanic David have us with them every step as they face up to the realities of what they’ve taken on: not all friends and family want them to succeed.</p>
+				<p class="filmlocation">Showing at: Empire</p>
+				<ul class="filmtimes">
+					<li>16:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+		</div>
 
-		<article class="film" data-genre="indie" data-dates="12october" data-location="princecharles">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/an-03.jpg" />
-			<div class="film_text">
-			<h2>An</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
-
-		<article class="film" data-genre="thriller" data-dates="13october" data-location="curzon">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/der-nachtmar-02.jpg" />
+		<div class="film_wrapper">
+			<article class="film" data-genre="indie" data-dates="12october" data-location="princecharles">
+				<a href="blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/an-03.jpg" />
+					<h2>An</h2>
+				</a>
+			</article>
+			<article class="description">
+				<p>The title of Naomi Kawase’s film – perhaps her best to date – refers to a red-bean paste used to fill the dorayaki pancakes served up by chef Sentaro (Nagase, best known here for Mystery Train) at the tiny diner he manages with little enthusiasm. His mood and takings are transformed, however, after strangely insistent septuagenarian Tokue (Kirin Kiki) persuades him to take her on as his assistant: the results of her painstaking methods of making an soon attract new customers. But fortune is fickle, and Tokue, like Sentaro, harbours a secret… </p>
+				<p class="filmlocation">Showing at: Prince Charles Cinema</p>
+				<ul class="filmtimes">
+					<li>16:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+		</div>
 		
-			<div class="film_text">
-			<h2>Der Nachtmar</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="film_wrapper">
+			<article class="film" data-genre="thriller" data-dates="13october" data-location="curzon">
+				<a href="blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/der-nachtmar-02.jpg" />
+					<h2>Der Nachtmar</h2>
+				</a>
+			</article>
+			<article class="description">
+				<p>Berlin: summer, friends and party nights. And a curious creature. 17-year-old Tina and her friends are having the time of their life, exploring the city by night and consuming all kinds of drugs as they party. They feel immortal. But after one too many comedowns, Tina is visited by a strange creature – a sinister version of ET that embodies those anxieties that afflict every teenager. As she tries to hide her visions, she feels increasingly isolated from her friends and parents. Blurring the lines between dreams and reality, with fear magnifying Tina’s paranoia, painter/sculptor AKIZ’s feature debut is an impressive fast-paced indie techno horror that explores teenage confusion and rebellion with a real sense of urgency.</p>
+				<p class="filmlocation">Showing at: Curzon Soho</p>
+				<ul class="filmtimes">
+					<li>16:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+		</div>
 
-		<article class="film" data-genre="horror" data-dates="14october" data-location="screenonthegreen">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/invention-03.jpg" />
-			<div class="film_text">
-			<h2>Invention</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="film_wrapper">
+			<article class="film" data-genre="horror" data-dates="14october" data-location="screenonthegreen">
+			<a href="blackmass.html">
+				<svg class="filmoverlay">
+					<use xlink:href="#original-poly" x="0" y="50px" />
+				</svg>
+				<img src="images/invention-03.jpg" />
+				<h2>Invention</h2>
+			</a>
+				
+			</article>
+			<article class="description">
+				<p>Toronto, Paris, São Paolo, renaissance artworks, city streets, and the sky, all as you’ve never seen them before. With this compendium of his recent formally audacious single-take films, acclaimed Canadian artist Mark Lewis presents a cinematic experience that considers Louis Lumiérè’s quote that ‘Cinema is an invention without future’. Employing ground-breaking visual effects and point cloud technology, Invention elaborates on the possibilities of camera movement; swooping, twisting and flying to give each city its own very particular narrative weight and character.</p>
+				<p class="filmlocation">Showing at: Screen on the Green</p>
+				<ul class="filmtimes">
+					<li>16:30,</li>
+					<li>20:30</li>	
+				</ul>
+			</article>
+		</div>
 
-		<article class="film" data-genre="romance" data-dates="15october" data-location="bfi">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/shooting-stars-01.jpg" />
-			<div class="film_text">
-			<h2>Shooting Stars</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
 
-		<article class="film" data-genre="indie" data-dates="13october" data-location="bfi">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/suffragette-002.jpg" />
-		
-			<div class="film_text">
-			<h2>Suffragette</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="film_wrapper">
+			<article class="film" data-genre="romance" data-dates="15october" data-location="bfi">
+			<a href="blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+				<img src="images/shooting-stars-01.jpg" />
+				<h2>Shooting Stars</h2>
+			</a>	
+			</article>
+			<article class="description">
+					<p>Shooting Stars opens in a British movie studio in the 1920s, where a western and a slapstick comedy are being filmed back to back. It’s a fascinating behind-the-scenes glimpse and a searing comment on the shallowness of the star system. Despite the director credit going to veteran filmmaker AV Bramble, this is demonstrably the original work of rising talent Anthony Asquith – his dynamic cinematographic style and professional approach to the design and lighting was a step change in the quality of British features. And there’s a killer ending too! Restored from material held at the BFI National Archive by our specialist team. It completes the BFI’s revival of Asquith’s silent film work, following on from A Cottage on Dartmoor and Underground.</p>
+					<p class="filmlocation">Showing at: BFI</p>
+					<ul class="filmtimes">
+						<li>16:30,</li>
+						<li>20:30</li>	
+					</ul>
+				</article>
+		</div>
 
-		<article class="film" data-genre="romance" data-dates="16october" data-location="curzon">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/valley-of-love-04.jpg" />
-			<div class="film_text">
-			<h2>Valley of Love</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
-		</article>
+		<div class="film_wrapper">
+			<article class="film" data-genre="indie" data-dates="13october" data-location="bfi">
+				<a href="blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/suffragette-002.jpg" />
+				</a>
+				<h2>Suffragette</h2>	
+			</article>
+			<article class="description">
+					<p>Director Sarah Gavron (Brick Lane, Village at the End of the World) returns to the Festival with an intense drama that traces the story of the foot soldiers of the early feminist movement as they fought for the right to vote. Maud (Carey Mulligan) has worked hard and exploitative hours in the same factory job since she was a girl; her only respite is the affection of her husband (Ben Whishaw) and their sweet young son. When her deepening friendships with fellow worker Violet (Anne-Marie Duff) and activist Edith Ellyn (Helena Bonham Carter) fuel her sense of injustice, she commits to the suffrage cause. Maud joins at the same time that the movement becomes more radical and violent, spurred on by the rousing leadership of Emmeline Pankhurst (Meryl Streep) and in reaction to the increasingly hostile interventions of the state.</p>
+					<p class="filmlocation">Showing at: BFI</p>
+					<ul class="filmtimes">
+						<li>16:30,</li>
+						<li>20:30</li>	
+					</ul>
+			</article>
+		</div>
 
+		<div class="film_wrapper">
+			<article class="film" data-genre="romance" data-dates="16october" data-location="curzon">
+				<a href="blackmass.html">
+					<svg class="filmoverlay">
+						<use xlink:href="#original-poly" x="0" y="50px" />
+					</svg>
+					<img src="images/valley-of-love-04.jpg" />
+				</a>			
+			<h2>Valley of Love</h2>	
+			</article>
+			<article class="description">
+					<p>Sharing the screen again for the first time in 35 years – since Maurice Pialat’s Loulou – two of French cinema’s greatest names come together in a tale of love, loss, memory and the mystical. Isabelle Huppert and Gérard Depardieu play a former couple who reunite in the USA’s Death Valley, following a mysterious summons from their long-dead son. The couple’s past and their unresolved feelings play out in hotel rooms, restaurants and among the desert perspectives of Nevada, as they move towards a mysterious epiphany.</p>
+					<p class="filmlocation">Showing at: Curzon Soho</p>
+					<ul class="filmtimes">
+						<li>16:30,</li>
+						<li>20:30</li>	
+					</ul>
+			</article>
+		</div>
+
+
+		<div class="film_wrapper">
 		<article class="film" data-genre="action" data-dates="14october" data-location="empire">
-			<svg class="filmoverlay">
-			<use xlink:href="#original-poly" x="0" y="50px" />
-			</svg>
-			<img src="images/burn-burn-burn-01.jpg" />
-			<div class="film_text">
-			<h2>Burn Burn Burn</h2>
-			<!-- <p>Film Description</p> -->
-			</div>
+			<a href="blackmass.html">
+				<svg class="filmoverlay">
+					<use xlink:href="#original-poly" x="0" y="50px" />
+				</svg>
+				<img src="images/burn-burn-burn-01.jpg" />
+			</a>			
+			<h2>Burn Burn Burn</h2>	
 		</article>
+		<article class="description">
+					<p>Dan (Jack Farthing) dispatches his good friends Seph (Laura Carmichael) and Alex (Chloe Pirrie) on an arduous road trip to hit five disparate UK venues. He’ll even accompany them: not so much backseat driver as wedged into the glove compartment, since the prematurely deceased Dan has assigned the bewildered, emotionally freefalling pair to scatter his ashes in places dear to his heart. Meantime, his funny, often painfully frank video missives map altogether rockier relationship terrain. Debut feature director Chanya Button and writer Charlie Covell wring plenty of laughter and tears from their daring conceit, which knowingly takes familiar filmic tropes – road movie, buddy-buddy drama – on its own smart, female-centric spin. Great British comic talent (Sally Phillips, Alice Lowe, Alison Steadman) contribute entertaining cameos, but Farthing plus the excellent Pirrie and Carmichael (unrecognisable from Downton Abbey) are the true driving force for this crackling, life-affirming voyage of self-discovery.</p>
+					<p class="filmlocation">Showing at: Empire</p>
+					<ul class="filmtimes">
+						<li>16:30,</li>
+						<li>20:30</li>	
+					</ul>
+			</article>
+		</div>
 
 	</section>
 </div>

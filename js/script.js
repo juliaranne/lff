@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 
 var hide_text = $('.description');
-	hide_text.slideUp();
+	// hide_text.slideUp();
 
 
 function filmdetails(event){
@@ -58,6 +58,8 @@ $('.film').on('click', filmdetails );
 		event.preventDefault();
 		var genre = $(this).val().toLowerCase();
 
+		$('.description').hide();
+
 		 $('.filmoverlay').css('fill', '#00E3E3');
 		 $('.filmtext').css('backgroundColor', '#00E3E3');
 
@@ -82,6 +84,7 @@ $('select.dates').on('change', function(event){
 	event.preventDefault();
 	var dates = ($(this).val().toLowerCase()).replace(/\s+/g, '');
 	
+	$('.description').hide();
 
 	$('.film').show();
 
@@ -104,7 +107,7 @@ $('select.dates').on('change', function(event){
 		event.preventDefault();
 		var location = ($(this).val().toLowerCase()).replace(/\s+/g, '');
 		
-
+		$('.description').hide();
 
 		$('.film').show();
 		
