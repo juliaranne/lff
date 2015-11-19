@@ -6,27 +6,38 @@
 $( document ).ready(function() {
 
 
-var hide_text = $('.description');
-	// hide_text.slideUp();
-
-
 function filmdetails(event){
-	event.preventDefault();
 
-	var linkto = $(this).find('a').attr('href');
-	var currentfilm = $(this).next('.description');
+			event.preventDefault();
+			console.log(this);
 
-	var windowwidth = $(window).width();
+			var linkto = $(this).find('a').attr('href');
+			var windowwidth = $(window).width();
+			var currentfilm = $(this);
+			var filmdesc = $(this).next('.description');
+			
+
+
+			if (windowwidth > 500 ){
+				window.location.href = linkto;
+
+			} else {
+
+				if (currentfilm.hasClass('active')){
+					filmdesc.slideUp();
+					currentfilm.removeClass('active');
+				} else {
+					$('.description').slideUp();
+					$('.film').removeClass('active');
+					currentfilm.addClass('active');
+					filmdesc.slideDown();
+				}
 	
+			}
+			
+		}	
 
-	if ( windowwidth > 500 ){
-		window.location.href = linkto;
-	} else if(!currentfilm.hasClass('active')) {
-		hide_text.removeClass('active').slideUp();
-		currentfilm.addClass('active').slideDown();
-	}
-}
-$('.film').on('click', filmdetails );
+ $('.film').on('click', filmdetails );
 
 
 //hide filmtext
