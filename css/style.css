@@ -211,10 +211,6 @@ img{
 }
 
 
-.locations *{
-  
-}
-
 .locations{
   width:100%;
   height:100%;
@@ -273,10 +269,11 @@ def{
 .filmoverlay{
   position: absolute;
   bottom:-10;
+  left:-1;
   fill:#00E3E3;
   z-index: 10;
   /*opacity: 0.8;*/
-  width:100%;
+  width:102%;
   transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
 
