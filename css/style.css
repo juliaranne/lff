@@ -115,7 +115,7 @@ nav{
 
 .navlink{
   background: url(../images/filmreel.png)no-repeat top left;
-  opacity: 0.3;
+  opacity: 0.6;
   display: block;
   padding: 18px 0 25px 55px;
   cursor: pointer; 
@@ -254,7 +254,7 @@ img{
 /*******************************************/
 
 header{
-  background: url(../images/black-mass-01.jpg) no-repeat center top;
+  /*background: url(../images/black-mass-01.jpg) no-repeat center top;*/
   background-size: cover;
   height:100%;
   padding:0;
