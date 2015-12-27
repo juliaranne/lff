@@ -254,7 +254,7 @@ img{
 /*******************************************/
 
 header{
-  /*background: url(../images/black-mass-01.jpg) no-repeat center top;*/
+  background: url(../images/black-mass-01.jpg) no-repeat center top;
   background-size: cover;
   height:100%;
   padding:0;
@@ -328,7 +328,145 @@ def{
 /* MEDIA QUERIES
 /*******************************************/
 
-@media screen and (max-width: 500px){
+/*@media screen and (max-width: 768px){
+
+.selectors{
+  float:none;
+  margin-right:20px;
+}
+
+select{
+    display: inline;
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    
+}*/
+
+
+@media screen and (max-width: 768px){
+ 
+html *{
+}
+.description{
+padding-bottom: 5px;
+}
+.title_page{
+   margin:0 auto;
+  /*padding-top:295px;*/
+  text-align:center;
+
+  }
+
+
+header{
+    background-size: cover;
+    height:100%;
+    padding:0;
+    margin:0; 
+  }
+
+
+
+.selectors{
+  width:97.5%;
+  float:none;
+  height:37px;
+  margin:0 10px 0 0;
+
+  }
+
+select{
+  display:inline-block;
+  width: 32%;
+  height: 36px;
+  margin:10px 5px 0 auto;
+
+}
+
+.listings_container{
+  width:100%;
+  margin:0 10px 0 10px;
+}
+
+.film_listings{
+  
+  margin:0;
+  min-width:100%;
+  max-width: 100%;
+ 
+}
+
+
+.film{
+  float:left;
+  min-width:47%;
+  margin:0 15px 15px 0;
+    
+  }
+
+.film_listings img{
+  max-width:100%;  
+  }
+
+.film_wrapper{
+  height:auto;
+  background-color:#00E3E3;
+ /* z-index: -10;*/
+  margin-bottom: 20px;
+}
+
+.film_wrapper p{
+  color:#ffffff;
+ /* z-index: 60;*/
+  padding:0 20px 10px 10px;
+}
+
+.filmlocation{
+  font-weight: bold;
+}
+
+.filmtimes{
+  margin: 0 0 10px 10px;
+}
+.filmtimes.indv{
+  margin:10px 0;
+}
+
+
+.locations{
+  float:none;
+  margin-top:40px;
+
+}
+.cinemas{
+  margin:0 auto;
+  width:650px;
+  /*verticle align cinema location section*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  /*verticle centre*/
+}
+.cinema{
+  float:left;
+  height:250px;
+  margin:0 15px 0 10px;
+}
+
+.locationtext{
+  width:250px;
+}
+
+.cinema:nth-child(even) {
+  margin:0 auto;
+}
+
+
+}
+
+@media screen and (max-width: 590px){
  
 html *{
 }
@@ -363,6 +501,7 @@ nav{
   }
 
 select{
+  display:block;
   width: 100%;
   height: 36px;
   margin:10px auto;
@@ -370,6 +509,7 @@ select{
 }
 
 .listings_container{
+  width:95%;
   margin:0 auto;
 }
 
@@ -448,8 +588,6 @@ select{
 
 
 }
-
-
 
 
 
